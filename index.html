@@ -3,37 +3,53 @@
 <head>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Beer Review</title>
+  <title>fruit Review</title>
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <div class="page-header">
-          <h1>Beer Review</h1>
+          <h1>fruits Review</h1>
         </div>
 
-        <section class="beers">
-          <h2>Beers</h2>
-          <ul class="beers-list"></ul>
+        <section class="fruits">
+          <h2>fruits</h2>
+          <ul class="fruits-list" id="fruits-list">
+          </ul>
         </section>
 
-        <form class="beer-form">
-          <h3>Add a New Beer</h3>
+        <form class="fruit-form">
+          <h3>Add a New fruit</h3>
 
           <div class="form-group">
             <input type="text"
-              class="beer-input form-control"
-              placeholder="Beer Name">
+              id="name"
+              class="fruit-input form-control"
+              placeholder="fruit Name">
           </div>
 
           <div class="form-group">
             <input type="text"
+            id="category"
               class="category-input form-control"
               placeholder="Category">
           </div>
 
+          <div>
+              <div class="rating" id="rating">
+                  <span class="star" id="5" href="#5">☆</span>
+                  <span class="star" id="4" href="#4">☆</span>
+                  <span class="star" id="3" href="#3">☆</span>
+                  <span class="star" id="2" href="#2">☆</span>
+                  <span class="star" id="1" href="#1">☆</span>
+                  </div>
+          </div>
+            
+          
+
           <button class="btn btn-primary post-beer" type="button">Post</button>
+
         </form>
       </div>
     </div>
